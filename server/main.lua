@@ -27,6 +27,8 @@ AddEventHandler('buyPPA', function()
 	end
 end)
 
+TriggerEvent('esx_society:registerSociety', 'police', 'Police', 'society_police', 'society_police', 'society_police', {type = 'public'})
+
 RegisterServerEvent('esx_policejob:givebasickit')
 AddEventHandler('esx_policejob:givebasickit', function()
 	local _source = source
